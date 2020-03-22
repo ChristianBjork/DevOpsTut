@@ -9,10 +9,11 @@ namespace SimpleAPI.Test
     {
         ValuesController controller = new ValuesController();
         [Fact]
+        // fucking update
         public void GetReturnsMyName()
         {
             var returnValue = controller.Get(1);
-            Assert.Equal("Les Jackson", returnValue.Value);
+            Assert.Equal("Lasse Poulsen", returnValue.Value);
         }
 
 
